@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills | Esref "Esh" Selvi</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* small addition, still professional */
+    .chips { display:flex; flex-wrap:wrap; gap:10px; }
+    .chip {
+      background:#102a30;
+      border:1px solid rgba(20,184,166,0.15);
+      padding:10px 14px;
+      border-radius:999px;
+      color:#c7e7ea;
+      font-size:14px;
+    }
+    .grid {
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:18px;
+    }
+    @media (min-width: 900px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div><strong>Esh Selvi</strong></div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <div class="page">
+    <h2>Skills</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3 style="margin-top:0;">Core</h3>
+        <div class="chips">
+          <span class="chip">Machine Learning</span>
+          <span class="chip">Feature Engineering</span>
+          <span class="chip">Model Design</span>
+          <span class="chip">Evaluation & Metrics</span>
+          <span class="chip">Experimentation</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 style="margin-top:0;">Tools</h3>
+        <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">SQL</span>
+          <span class="chip">Pandas</span>
+          <span class="chip">NumPy</span>
+          <span class="chip">scikit-learn</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 style="margin-top:0;">Applied Areas</h3>
+        <div class="chips">
+          <span class="chip">NLP</span>
+          <span class="chip">Pricing Analytics</span>
+          <span class="chip">Operations Analytics</span>
+          <span class="chip">Decision Support</span>
+          <span class="chip">Data Cleaning</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 style="margin-top:0;">Communication</h3>
+        <div class="chips">
+          <span class="chip">Stakeholder Reporting</span>
+          <span class="chip">Business Impact Narratives</span>
+          <span class="chip">Clear Documentation</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>© 2026 Esref “Esh” Selvi</footer>
+</body>
+</html>
