@@ -2,115 +2,264 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Esref "Esh" Selvi | Data Scientist</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Esref “Esh” Selvi | Data Scientist</title>
+  <meta name="description" content="Esref “Esh” Selvi — Data Scientist focused on machine learning, feature engineering, and operational optimization. Academic rigor + measurable business impact." />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<nav>
-  <div><strong>Esref "Esh" Selvi</strong></div>
-  <div>
-    <a href="index.html" class="active">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="skills.html">Skills</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</nav>
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__brand">
+      <a class="nav__logo" href="index.html" aria-label="Home">
+        Esref <span class="quote">“Esh”</span> Selvi
+      </a>
+      <span class="nav__role">Data Scientist</span>
+    </div>
 
-<div class="page">
+    <div class="nav__links" aria-label="Primary">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
 
-  <div class="hero-grid">
+  <main class="page">
 
-    <!-- LEFT -->
-    <div>
-      <h1>Esref “Esh” Selvi</h1>
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero__bg" aria-hidden="true"></div>
 
-      <p class="hero-lead">
-        Data Scientist specializing in <strong>Machine Learning</strong>,
-        <strong>Feature Engineering</strong>, and <strong>Operational Optimization</strong>.
-        I design decision systems that transform complex, messy data into clear and measurable business advantage.
-      </p>
+      <div class="hero__grid">
+        <!-- Left -->
+        <div class="hero__left">
+          <div class="eyebrow">
+            <span class="dot"></span>
+            <span>Executive-level analytics • Decision systems • Measurable outcomes</span>
+          </div>
 
-      <div class="hero-actions">
-        <a class="button" href="projects.html">Explore My Work</a>
-        <a class="ghostbtn" href="about.html">Read My Story</a>
-        <a class="ghostbtn" href="contact.html">Contact</a>
+          <h1 class="hero__title">
+            Data science that moves
+            <span class="accent">business decisions</span>.
+          </h1>
+
+          <p class="hero__lead">
+            I’m <strong>Esref “Esh” Selvi</strong> — a Data Scientist specializing in
+            <strong>Machine Learning</strong>, <strong>Feature Engineering</strong>, and
+            <strong>Operational Optimization</strong>. I build structured, production-minded analytics that translate
+            messy data into <strong>revenue, speed, and clarity</strong> for stakeholders.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="projects.html">View Selected Work</a>
+            <a class="btn btn--ghost" href="about.html">Read My Story</a>
+            <a class="btn btn--ghost" href="contact.html">Get in Touch</a>
+          </div>
+
+          <div class="tags" aria-label="Focus tags">
+            <span class="tag">Pricing & Forecasting</span>
+            <span class="tag">Operational Decision Systems</span>
+            <span class="tag">NLP (Topic Modeling)</span>
+            <span class="tag">Large-Scale Data</span>
+            <span class="tag">CT/MRI Segmentation</span>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Credibility row -->
+          <div class="cred" aria-label="Credibility highlights">
+            <div class="cred__item">
+              <div class="cred__kpi">7</div>
+              <div class="cred__label">Peer-reviewed publications (medical image analysis)</div>
+            </div>
+            <div class="cred__item">
+              <div class="cred__kpi">ML</div>
+              <div class="cred__label">End-to-end modeling, validation & feature engineering</div>
+            </div>
+            <div class="cred__item">
+              <div class="cred__kpi">Ops</div>
+              <div class="cred__label">High-stakes, time-sensitive operational optimization</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <aside class="hero__right" aria-label="Impact panel">
+          <div class="panel panel--glass">
+            <div class="panel__top">
+              <div class="panel__title">Impact Snapshot</div>
+              <div class="panel__badge">Business-first</div>
+            </div>
+
+            <ul class="impact">
+              <li class="impact__item">
+                <div class="impact__icon" aria-hidden="true">↯</div>
+                <div class="impact__text">
+                  Built decision systems that compress analysis cycles from <strong>days → minutes</strong>,
+                  enabling faster executive decisions.
+                </div>
+              </li>
+              <li class="impact__item">
+                <div class="impact__icon" aria-hidden="true">◎</div>
+                <div class="impact__text">
+                  Strong in <strong>feature engineering</strong> and <strong>model evaluation</strong> —
+                  designed for real-world constraints, not just notebooks.
+                </div>
+              </li>
+              <li class="impact__item">
+                <div class="impact__icon" aria-hidden="true">▦</div>
+                <div class="impact__text">
+                  Comfortable with <strong>large-scale data</strong>, NLP pipelines, and translating insights into
+                  stakeholder-ready narratives.
+                </div>
+              </li>
+            </ul>
+
+            <div class="panel__sub">
+              <div class="mini">Primary Stack</div>
+              <div class="stack">
+                <span class="stack__pill">Python</span>
+                <span class="stack__pill">SQL</span>
+                <span class="stack__pill">Pandas</span>
+                <span class="stack__pill">NumPy</span>
+                <span class="stack__pill">scikit-learn</span>
+              </div>
+            </div>
+
+            <div class="panel__cta">
+              <a class="btn btn--soft" href="projects.html">See projects & repos →</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- VALUE SECTION -->
+    <section class="section" aria-label="What I deliver">
+      <header class="section__head">
+        <h2 class="section__title">What I deliver</h2>
+        <p class="section__subtitle">
+          Senior-level work is not “more models” — it’s <strong>structure</strong>, <strong>tradeoffs</strong>,
+          and <strong>impact</strong>. My focus is building systems people can trust and use.
+        </p>
+      </header>
+
+      <div class="cards cards--3">
+        <article class="card card--prime">
+          <div class="card__cap">Business Impact</div>
+          <h3 class="card__title">Decision systems, not dashboards</h3>
+          <p class="card__text">
+            I design workflows that translate analytics into action:
+            pricing guidance, operational selection, and prioritization frameworks that stakeholders can execute.
+          </p>
+          <div class="card__foot">
+            <span class="chip">Outcome-driven</span>
+            <span class="chip">Stakeholder-ready</span>
+          </div>
+        </article>
+
+        <article class="card card--split">
+          <div class="card__cap">Technical Depth</div>
+          <h3 class="card__title">Robust ML + feature engineering</h3>
+          <p class="card__text">
+            From problem framing to validation: feature design, leakage control, metrics, error analysis,
+            and iteration under real constraints.
+          </p>
+          <div class="card__foot">
+            <span class="chip">Evaluation rigor</span>
+            <span class="chip">Production mindset</span>
+          </div>
+        </article>
+
+        <article class="card card--research">
+          <div class="card__cap">Academic Rigor</div>
+          <h3 class="card__title">Research-grade foundation</h3>
+          <p class="card__text">
+            CT/MRI segmentation background with peer-reviewed publications —
+            strong methodology, careful experimentation, and clarity in conclusions.
+          </p>
+          <div class="card__foot">
+            <span class="chip">Medical imaging</span>
+            <span class="chip">Evidence-based</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SELECTED WORK -->
+    <section class="section" aria-label="Selected work">
+      <header class="section__head section__head--tight">
+        <h2 class="section__title">Selected work</h2>
+        <p class="section__subtitle">
+          A few representative projects. Full details and repositories are on the Projects page.
+        </p>
+      </header>
+
+      <div class="work">
+        <a class="work__item" href="projects.html#airbnb-price" aria-label="Dallas Airbnb — Data Analysis & Price Prediction">
+          <div class="work__meta">
+            <div class="work__kicker">Machine Learning</div>
+            <div class="work__title">Dallas Airbnb — Price Prediction</div>
+            <div class="work__desc">Cleaning, EDA, feature engineering, modeling & evaluation for pricing insights.</div>
+          </div>
+          <div class="work__arrow" aria-hidden="true">→</div>
+        </a>
+
+        <a class="work__item" href="projects.html#nlp-topics" aria-label="Airbnb Reviews — NLP Topic Modeling">
+          <div class="work__meta">
+            <div class="work__kicker">NLP</div>
+            <div class="work__title">Airbnb Reviews — Topic Modeling</div>
+            <div class="work__desc">Interpretable themes (cleanliness, location, communication) from large review corpora.</div>
+          </div>
+          <div class="work__arrow" aria-hidden="true">→</div>
+        </a>
+
+        <a class="work__item" href="projects.html#medical-seg" aria-label="Medical Image Segmentation — CT & MRI">
+          <div class="work__meta">
+            <div class="work__kicker">Medical Imaging</div>
+            <div class="work__title">CT/MRI Segmentation — Master’s Research</div>
+            <div class="work__desc">Segmentation modeling and validation; research-to-practice rigor.</div>
+          </div>
+          <div class="work__arrow" aria-hidden="true">→</div>
+        </a>
       </div>
 
-      <div class="pills">
-        <span class="pill">Pricing & Forecasting</span>
-        <span class="pill">NLP Topic Modeling</span>
-        <span class="pill">Optimization Systems</span>
-        <span class="pill">Large-Scale Data</span>
-        <span class="pill">Medical Imaging (CT/MRI)</span>
+      <div class="section__cta">
+        <a class="btn btn--primary" href="projects.html">Explore all projects</a>
+        <a class="btn btn--ghost" href="skills.html">View skills</a>
       </div>
-    </div>
+    </section>
 
-    <!-- RIGHT -->
-    <div class="card side-card">
-      <div class="mini-title">Impact Snapshot</div>
-
-      <div class="stat-grid">
-        <div class="stat">
-          <div class="num">7</div>
-          <div class="lbl">Peer-reviewed publications in medical image analysis</div>
+    <!-- FINAL CTA -->
+    <section class="cta" aria-label="CTA">
+      <div class="cta__inner">
+        <div class="cta__copy">
+          <h2 class="cta__title">Let’s build analytics that leadership can act on.</h2>
+          <p class="cta__text">
+            If you’re looking for a Data Scientist who combines academic rigor with operational reality,
+            I’d love to connect.
+          </p>
         </div>
-        <div class="stat">
-          <div class="num">Ops</div>
-          <div class="lbl">Decision systems for fast-moving, high-stakes environments</div>
-        </div>
-        <div class="stat">
-          <div class="num">ML</div>
-          <div class="lbl">End-to-end modeling, validation, and feature engineering</div>
+        <div class="cta__actions">
+          <a class="btn btn--soft" href="contact.html">Contact</a>
+          <a class="btn btn--ghost" href="about.html">About</a>
         </div>
       </div>
+    </section>
 
-      <div style="height:14px;"></div>
+  </main>
 
-      <div class="mini-title">Primary Stack</div>
-      <p style="margin:0;">
-        Python • SQL • Pandas • NumPy • scikit-learn<br/>
-        Modeling • Feature Engineering • Validation
-      </p>
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>© 2026 Esref “Esh” Selvi</span>
+      <span class="footer__sep">•</span>
+      <span class="footer__hint">Built with HTML + CSS on GitHub Pages</span>
     </div>
-
-  </div>
-
-  <!-- Sections: break the “same card” look -->
-  <div class="section-grid">
-
-    <div class="card full">
-      <h3>Research + Real-World Impact</h3>
-      <p>
-        My background spans medical image segmentation research (CT/MRI) with peer-reviewed publications and hands-on
-        business analytics where machine learning directly influenced pricing, operational timing, and competitive positioning.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Core Focus Areas</h3>
-      <p>
-        <strong>Machine Learning:</strong> End-to-end model design and validation<br><br>
-        <strong>NLP:</strong> Topic modeling and insight extraction from large text datasets<br><br>
-        <strong>Operations Analytics:</strong> Decision systems for high-speed environments
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Strategic Mindset</h3>
-      <p>
-        I am driven by solving high-stakes problems where speed, structure, and clarity create measurable advantage.
-        My work bridges research-level rigor with business execution.
-      </p>
-    </div>
-
-  </div>
-
-</div>
-
-<footer>© 2026 Esref “Esh” Selvi</footer>
+  </footer>
 
 </body>
 </html>
