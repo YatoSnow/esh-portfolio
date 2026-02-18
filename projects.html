@@ -5,6 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects | Esref "Esh" Selvi</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .meta { color:#a8dde0; font-size:14px; margin-top:10px; }
+    .actions { display:flex; gap:12px; flex-wrap:wrap; margin-top:14px; }
+    .linkbtn {
+      display:inline-block;
+      padding:10px 14px;
+      border-radius:10px;
+      border:1px solid rgba(20,184,166,0.18);
+      background:#102a30;
+      color:#e2f3f5;
+      text-decoration:none;
+      transition:0.25s ease;
+      font-weight:600;
+      font-size:14px;
+    }
+    .linkbtn:hover { transform:translateY(-3px); border-color:#14b8a6; }
+  </style>
 </head>
 <body>
   <nav>
@@ -22,34 +39,62 @@
     <h2>Projects</h2>
 
     <div class="card">
-      <h3 style="margin-top:0;">NLP Topic Modeling on Large-Scale Reviews</h3>
+      <h3 style="margin-top:0;">Dallas Airbnb — Data Analysis & Price Prediction</h3>
       <p>
-        Built an NLP pipeline to extract actionable themes from a large review corpus and surface what customers care about most.
+        End-to-end workflow: cleaning, EDA, feature engineering, and ML modeling to predict Airbnb listing prices in Dallas.
       </p>
-      <p style="margin-bottom:0;">
-        <b>Methods:</b> text cleaning, feature engineering, LDA/NMF topic modeling, topic interpretation & reporting
-      </p>
+      <div class="meta"><b>Stack:</b> Python, Pandas, ML modeling, evaluation</div>
+      <div class="actions">
+        <a class="linkbtn" href="https://github.com/YatoSnow/Dallas-Airbnb-Final-" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+      </div>
     </div>
 
     <div class="card">
-      <h3 style="margin-top:0;">Dallas Airbnb Revenue Optimization</h3>
+      <h3 style="margin-top:0;">Airbnb Reviews — NLP Topic Modeling</h3>
       <p>
-        Developed predictive models to understand revenue drivers and support pricing/investment decisions with engineered features.
+        Topic modeling pipeline to extract interpretable themes from Airbnb reviews (cleanliness, location, communication, guest experience).
       </p>
-      <p style="margin-bottom:0;">
-        <b>Methods:</b> feature engineering, regression/ML modeling, validation, metrics-driven iteration
-      </p>
+      <div class="meta"><b>Stack:</b> NLP preprocessing, EDA, topic modeling</div>
+      <div class="actions">
+        <a class="linkbtn" href="https://github.com/YatoSnow/Understanding-Guest-Experience-Through-Topic-Modeling-of-Airbnb-Reviews" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+      </div>
     </div>
 
     <div class="card">
-      <h3 style="margin-top:0;">Operations & Auction Analytics (Industry)</h3>
+      <h3 style="margin-top:0;">SQL Case Study — Country Club</h3>
       <p>
-        Applied analytics to operational workflows in fast-moving environments—turning imperfect data into practical decisions.
+        SQL analysis case study focusing on practical querying, joins, aggregation, and analytical reasoning.
       </p>
-      <p style="margin-bottom:0;">
-        <b>Focus:</b> efficiency, process improvement, and decision support for operations and pricing
-      </p>
+      <div class="meta"><b>Stack:</b> SQL</div>
+      <div class="actions">
+        <a class="linkbtn" href="https://github.com/YatoSnow/SQL-Case-Study---Country-Club" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+      </div>
     </div>
+
+    <div class="card">
+      <h3 style="margin-top:0;">FIFA Player Performance — EDA & Feature Relationships</h3>
+      <p>
+        Exploratory analysis of professional player statistics to understand performance patterns and attribute relationships.
+      </p>
+      <div class="meta"><b>Stack:</b> Python, EDA, statistics</div>
+      <div class="actions">
+        <a class="linkbtn" href="https://github.com/YatoSnow/fifa-stats" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 style="margin-top:0;">Master’s Project — Image Processing (Biomedical)</h3>
+      <p>
+        Graduate-level image processing work focused on extracting reliable signals from medical/biomedical imagery.
+        (I can share code, report, or a short technical summary.)
+      </p>
+      <div class="meta"><b>Stack:</b> Image processing, modeling, evaluation</div>
+      <div class="actions">
+        <!-- Linki sonra ekleriz: repo ya da pdf -->
+        <a class="linkbtn" href="contact.html">Request Details</a>
+      </div>
+    </div>
+
   </div>
 
   <footer>© 2026 Esref “Esh” Selvi</footer>
