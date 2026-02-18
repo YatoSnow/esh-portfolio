@@ -51,7 +51,7 @@ a{ color: inherit; }
 }
 
 /* =========================================================
-   NAV
+   NAV (thinner + more premium)
 ========================================================= */
 .nav{
   position: fixed;
@@ -62,14 +62,14 @@ a{ color: inherit; }
   justify-content: space-between;
   align-items:center;
 
-  padding: 16px 22px;
+  padding: 12px 18px;
   background: rgba(7, 20, 25, 0.78);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line2);
 }
 
 @media (min-width: 900px){
-  .nav{ padding: 18px 48px; }
+  .nav{ padding: 12px 36px; }
 }
 
 .nav__brand{
@@ -90,9 +90,9 @@ a{ color: inherit; }
 .nav__logo .quote{ color: var(--brand); }
 
 .nav__role{
-  font-size: 12px;
+  font-size: 11px;
   color: var(--muted2);
-  padding: 6px 10px;
+  padding: 5px 9px;
   border: 1px solid var(--line2);
   border-radius: 999px;
   background: rgba(12, 35, 41, 0.55);
@@ -105,7 +105,7 @@ a{ color: inherit; }
   font-size: 14px;
   font-weight: 650;
   letter-spacing: 0.15px;
-  padding: 10px 8px;
+  padding: 8px 8px;
   border-radius: 10px;
   transition: transform .2s var(--ease), color .2s var(--ease), background .2s var(--ease);
 }
@@ -125,11 +125,11 @@ a{ color: inherit; }
 @media (max-width: 760px){
   .nav{
     align-items:flex-start;
-    gap: 12px;
+    gap: 10px;
   }
-  .nav__brand{ flex-direction: column; align-items:flex-start; gap: 8px; }
+  .nav__brand{ flex-direction: column; align-items:flex-start; gap: 7px; min-width: 0; }
   .nav__links{ display:flex; flex-wrap:wrap; justify-content:flex-start; }
-  .nav__links a{ margin-left: 0; margin-right: 10px; padding: 9px 10px; }
+  .nav__links a{ margin-left: 0; margin-right: 10px; padding: 8px 10px; }
 }
 
 /* =========================================================
@@ -138,11 +138,11 @@ a{ color: inherit; }
 .page{
   max-width: var(--max);
   margin: 0 auto;
-  padding: 110px 18px 90px;
+  padding: 96px 18px 90px; /* reduced because nav is thinner */
 }
 
 @media (min-width: 900px){
-  .page{ padding: 130px 24px 110px; }
+  .page{ padding: 112px 24px 110px; }
 }
 
 h1, h2, h3{ margin: 0; }
@@ -294,10 +294,10 @@ strong{ color: var(--text); }
 
 .hero__lead{
   margin-top: 14px;
-  max-width: 60ch;
+  max-width: 62ch;
   font-size: 17px;
   color: var(--muted);
-  line-height: 1.8;
+  line-height: 1.85;
 }
 
 .hero__actions{
@@ -307,6 +307,7 @@ strong{ color: var(--text); }
   margin-top: 18px;
 }
 
+/* Reduced/noise tags */
 .tags{
   display:flex;
   flex-wrap:wrap;
@@ -314,14 +315,19 @@ strong{ color: var(--text); }
   margin-top: 16px;
 }
 
+.tags--tight{
+  margin-top: 14px;
+  gap: 8px;
+}
+
 .tag{
-  padding: 8px 12px;
+  padding: 7px 10px;
   border-radius: 999px;
-  border: 1px solid rgba(20,184,166,0.22);
-  background: rgba(20,184,166,0.08);
-  color: rgba(231,251,253,0.82);
-  font-weight: 700;
-  font-size: 12.5px;
+  border: 1px solid rgba(20,184,166,0.16);
+  background: rgba(12,35,41,0.40);
+  color: rgba(231,251,253,0.74);
+  font-weight: 750;
+  font-size: 12px;
 }
 
 /* Credibility KPI Row */
@@ -416,6 +422,14 @@ strong{ color: var(--text); }
   padding: 12px;
 }
 
+/* Highlight first impact item */
+.impact__item--primary{
+  background:
+    radial-gradient(500px 220px at 20% 0%, rgba(20,184,166,0.22), transparent 60%),
+    rgba(7,20,25,0.38);
+  border-color: rgba(20,184,166,0.30);
+}
+
 .impact__icon{
   width: 34px;
   height: 34px;
@@ -427,6 +441,11 @@ strong{ color: var(--text); }
   border: 1px solid rgba(20,184,166,0.20);
   color: var(--brand2);
   font-weight: 900;
+}
+
+.impact__item--primary .impact__icon{
+  background: rgba(20,184,166,0.18);
+  border-color: rgba(20,184,166,0.34);
 }
 
 .impact__text{
@@ -511,7 +530,7 @@ strong{ color: var(--text); }
   .cards--3{ grid-template-columns: 1fr; }
 }
 
-/* Base card (keeps compatibility with other pages) */
+/* Base card */
 .card{
   border-radius: var(--radius);
   border: 1px solid rgba(20,184,166,0.12);
@@ -556,7 +575,7 @@ strong{ color: var(--text); }
   gap: 10px;
 }
 
-/* Variants: different “feel” */
+/* Variants */
 .card--prime{
   background:
     radial-gradient(700px 240px at 15% 0%, rgba(20,184,166,0.18), transparent 60%),
@@ -591,7 +610,7 @@ strong{ color: var(--text); }
 }
 
 /* =========================================================
-   WORK LIST (Selected work)
+   WORK LIST
 ========================================================= */
 .work{
   display:grid;
