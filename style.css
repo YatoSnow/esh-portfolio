@@ -1,0 +1,111 @@
+/* === Global === */
+body {
+    margin:0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background:#0b1f24;
+    color:#e2f3f5;
+}
+
+/* === Navbar === */
+nav {
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:rgba(11,31,36,0.85);
+    backdrop-filter:blur(10px);
+    padding:18px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+    border-bottom:1px solid rgba(20,184,166,0.15);
+}
+
+nav strong {
+    font-size:18px;
+    color:#14b8a6;
+}
+
+nav a {
+    color:#e2f3f5;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:14px;
+    transition:0.3s;
+}
+
+nav a:hover {
+    color:#14b8a6;
+}
+
+/* === Page Layout === */
+.page {
+    padding:160px 20px 100px;
+    max-width:1000px;
+    margin:auto;
+    animation:fadeIn 0.8s ease-in;
+}
+
+h1 {
+    font-size:56px;
+    margin-bottom:20px;
+    color:#14b8a6;
+}
+
+h2 {
+    font-size:28px;
+    margin-bottom:20px;
+    color:#14b8a6;
+}
+
+p {
+    color:#c7e7ea;
+    line-height:1.7;
+}
+
+/* === Cards === */
+.card {
+    background:#102a30;
+    padding:30px;
+    border-radius:16px;
+    margin-bottom:25px;
+    transition:0.3s ease;
+    border:1px solid rgba(20,184,166,0.08);
+}
+
+.card:hover {
+    transform:translateY(-6px);
+    box-shadow:0 15px 30px rgba(0,0,0,.4);
+    border-color:#14b8a6;
+}
+
+/* === Buttons === */
+.button {
+    display:inline-block;
+    padding:12px 22px;
+    border-radius:8px;
+    text-decoration:none;
+    background:#14b8a6;
+    color:#0b1f24;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.button:hover {
+    background:#0ea5a0;
+}
+
+/* === Footer === */
+footer {
+    text-align:center;
+    padding:60px 20px;
+    color:#7fd9d2;
+    font-size:14px;
+}
+
+/* === Animation === */
+@keyframes fadeIn {
+    from {opacity:0; transform:translateY(20px);}
+    to {opacity:1; transform:translateY(0);}
+}
