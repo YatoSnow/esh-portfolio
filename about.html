@@ -10,16 +10,16 @@
 
 <body>
 
-  <!-- NAV (same as index) -->
+  <!-- NAV -->
   <nav class="nav">
     <div class="nav__brand">
-      <a class="nav__logo" href="index.html" aria-label="Home">
+      <a class="nav__logo" href="index.html">
         Esref <span class="quote">“Esh”</span> Selvi
       </a>
       <span class="nav__role">Data Scientist</span>
     </div>
 
-    <div class="nav__links" aria-label="Primary">
+    <div class="nav__links">
       <a href="index.html">Home</a>
       <a href="about.html" class="active">About</a>
       <a href="projects.html">Projects</a>
@@ -31,101 +31,50 @@
   <main class="page">
 
     <!-- HERO -->
-    <section class="hero aboutHero" aria-label="About hero">
-      <div class="hero__bg" aria-hidden="true"></div>
+    <section class="hero aboutHero">
+      <div class="hero__bg"></div>
 
       <div class="aboutHero__grid">
 
-        <!-- LEFT: TEXT (dominant) -->
-        <section class="hero__left aboutCopy">
+        <!-- LEFT – TEXT -->
+        <section class="hero__left">
 
-          <div class="eyebrow">
-            <span class="dot"></span>
-            <span>Clarity under uncertainty • Measurable outcomes • Trustworthy systems</span>
-          </div>
-
-          <h1 class="hero__title" style="font-size:44px;">
-            I build decision systems
-            <span class="accent">leadership can act on</span>.
+          <h1 class="hero__title" style="font-size:42px;">
+            I build decision systems <span class="accent">leadership can act on</span>.
           </h1>
 
-          <p class="hero__lead" style="max-width:72ch;">
-            I’m <strong>Esref “Esh” Selvi</strong>, a Data Scientist focused on practical
-            machine learning and analytics that improve decision speed,
-            consistency, and outcomes.
-            My work connects <strong>academic rigor</strong> with
-            <strong>operational reality</strong> — transforming complex,
-            messy datasets into structured decisions teams can trust.
+          <p class="hero__lead" style="max-width:70ch;">
+            I’m Esref “Esh” Selvi, a Data Scientist focused on practical machine learning
+            and analytics that improve decision speed and consistency.
+            My work bridges academic rigor with operational execution —
+            translating complex data into structured, usable decisions.
           </p>
 
           <div class="quoteStrip">
             <div class="quoteStrip__text">
-              Great data science isn’t about building more models.
-              It’s about designing <strong>clear tradeoffs</strong>,
-              improving <strong>decision velocity</strong>,
-              and delivering systems stakeholders can confidently execute.
+              I value clarity over complexity, and execution over abstraction.
             </div>
           </div>
 
-          <div class="divider"></div>
-
-          <div class="tags tags--tight">
-            <span class="tag">Pricing Strategy & Forecasting</span>
+          <div class="tags tags--tight" style="margin-top:18px;">
+            <span class="tag">Pricing Strategy</span>
             <span class="tag">Operational Optimization</span>
-            <span class="tag">Applied ML (NLP • Large-Scale Data)</span>
           </div>
 
-          <div class="hero__actions">
+          <div class="hero__actions" style="margin-top:20px;">
             <a class="btn btn--primary" href="projects.html">View Selected Work</a>
             <a class="btn btn--ghost" href="contact.html">Get in Touch</a>
           </div>
 
         </section>
 
-        <!-- RIGHT: PHOTO (supportive) -->
+        <!-- RIGHT – PHOTO -->
         <aside class="profileCard">
-
-          <div class="avatarWrap">
-            <img
-              class="avatar"
-              src="https://media.licdn.com/dms/image/v2/D5603AQHY-T2iPBGCYw/profile-displayphoto-crop_800_800/B56Zs4Y7x5KEAI-/0/1766177619566?e=1773273600&v=beta&t=yxrHArLcxiV5zHtS67DPAY9gBLELsgqTXt2e93n-da8"
-              alt="Esref “Esh” Selvi"
-              loading="lazy"
-              decoding="async"
-              width="800"
-              height="800"
-            />
-          </div>
-
-          <div class="profileMeta">
-
-            <div class="profileMeta__row">
-              <span class="badge">
-                <span class="dot"></span> Business-first Data Science
-              </span>
-              <span class="badge">
-                <span class="dot"></span> ML • Feature Engineering
-              </span>
-            </div>
-
-            <div class="kv">
-              <div class="kv__k">Focus</div>
-              <div class="kv__v">
-                Decision systems, pricing strategy, operational optimization,
-                and stakeholder-ready analytics.
-              </div>
-            </div>
-
-            <div class="kv">
-              <div class="kv__k">Credibility</div>
-              <div class="kv__v">
-                Research-grade foundation (medical image analysis) +
-                real-world operational execution.
-              </div>
-            </div>
-
-          </div>
-
+          <img
+            class="avatar"
+            src="https://media.licdn.com/dms/image/v2/D5603AQHY-T2iPBGCYw/profile-displayphoto-crop_800_800/B56Zs4Y7x5KEAI-/0/1766177619566?e=1773273600&v=beta&t=yxrHArLcxiV5zHtS67DPAY9gBLELsgqTXt2e93n-da8"
+            alt="Esref Selvi"
+          />
         </aside>
 
       </div>
@@ -133,107 +82,35 @@
 
     <!-- STORY -->
     <section class="section">
+
       <header class="section__head">
         <h2 class="section__title">From research to real-world execution</h2>
         <p class="section__subtitle">
-          My background spans academic rigor and operational decision-making —
-          allowing me to bridge theory and execution in high-stakes environments.
+          My background spans academic research and operational decision-making.
         </p>
       </header>
 
       <div class="blocks">
 
-        <article class="card card--research">
-          <div class="card__cap">Academic Foundation</div>
-          <h3 class="card__title">Research-grade methodology</h3>
+        <article class="card">
+          <h3 class="card__title">Research foundation</h3>
           <p class="card__text">
-            During my master’s research in biomedical engineering,
-            I developed segmentation models for CT and MRI data,
-            contributing to peer-reviewed publications.
-            This foundation shaped my approach to validation,
-            experimentation, and analytical discipline.
+            During my master’s research in biomedical engineering, I worked on
+            CT and MRI segmentation models and contributed to peer-reviewed publications.
+            This experience shaped my approach to validation, experimentation,
+            and analytical discipline.
           </p>
-          <div class="card__foot">
-            <span class="chip">Validation Rigor</span>
-            <span class="chip">Experimental Design</span>
-            <span class="chip">Medical Imaging</span>
-          </div>
         </article>
 
-        <article class="card card--prime">
-          <div class="card__cap">Operational Impact</div>
-          <h3 class="card__title">Decisions in minutes, not days</h3>
+        <article class="card">
+          <h3 class="card__title">Operational impact</h3>
           <p class="card__text">
-            In business operations, I built structured analytical workflows
-            that compressed multi-day executive review processes into minutes.
-            Instead of static dashboards, I designed
-            decision-ready systems aligned with timing and revenue constraints.
+            In business operations, I designed analytical workflows that reduced
+            multi-day executive review processes to minutes —
+            enabling faster, more consistent decision-making under real constraints.
           </p>
-          <div class="card__foot">
-            <span class="chip">Decision Systems</span>
-            <span class="chip">Execution</span>
-            <span class="chip">Measurable Outcomes</span>
-          </div>
         </article>
 
-      </div>
-    </section>
-
-    <!-- WHAT I OPTIMIZE FOR -->
-    <section class="section">
-      <header class="section__head">
-        <h2 class="section__title">What I optimize for</h2>
-        <p class="section__subtitle">
-          Reliable outcomes emerge from strong framing, careful evaluation,
-          and stakeholder-aligned delivery.
-        </p>
-      </header>
-
-      <div class="cards cards--3">
-
-        <article class="card card--split">
-          <div class="card__cap">Problem Framing</div>
-          <h3 class="card__title">Correct question, correct metric</h3>
-          <p class="card__text">
-            Aligning objectives, constraints, and success metrics before modeling.
-          </p>
-          <div class="card__foot">
-            <span class="chip">Tradeoffs</span>
-            <span class="chip">Constraints</span>
-          </div>
-        </article>
-
-        <article class="card card--prime">
-          <div class="card__cap">Modeling</div>
-          <h3 class="card__title">Feature engineering + evaluation rigor</h3>
-          <p class="card__text">
-            Practical ML designed for real-world constraints,
-            not just notebooks.
-          </p>
-          <div class="card__foot">
-            <span class="chip">Rigor</span>
-            <span class="chip">Reliability</span>
-          </div>
-        </article>
-
-        <article class="card card--research">
-          <div class="card__cap">Communication</div>
-          <h3 class="card__title">Stakeholder-ready narratives</h3>
-          <p class="card__text">
-            Clear recommendations, structured assumptions,
-            and actionable insights.
-          </p>
-          <div class="card__foot">
-            <span class="chip">Clarity</span>
-            <span class="chip">Decision Support</span>
-          </div>
-        </article>
-
-      </div>
-
-      <div class="section__cta">
-        <a class="btn btn--primary" href="projects.html">Explore Projects</a>
-        <a class="btn btn--ghost" href="contact.html">Contact</a>
       </div>
 
     </section>
