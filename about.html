@@ -2,15 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Esref "Esh" Selvi</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About | Esref “Esh” Selvi</title>
+  <meta name="description" content="About Esref “Esh” Selvi — Data Scientist focused on decision systems, measurable outcomes, and business-first ML." />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <nav>
-    <div><strong>Esref "Esh" Selvi</strong></div>
-    <div>
+  <!-- NAV (same as index) -->
+  <nav class="nav">
+    <div class="nav__brand">
+      <a class="nav__logo" href="index.html" aria-label="Home">
+        Esref <span class="quote">“Esh”</span> Selvi
+      </a>
+      <span class="nav__role">Data Scientist</span>
+    </div>
+
+    <div class="nav__links" aria-label="Primary">
       <a href="index.html">Home</a>
       <a href="about.html" class="active">About</a>
       <a href="projects.html">Projects</a>
@@ -19,54 +28,205 @@
     </div>
   </nav>
 
-  <div class="page">
-    <h2>About</h2>
+  <main class="page">
 
-    <div class="card">
+    <!-- ABOUT HERO -->
+    <section class="hero aboutHero" aria-label="About hero">
+      <div class="hero__bg" aria-hidden="true"></div>
 
-      <p style="font-size:18px; margin-top:0;">
-        I am a Data Scientist driven by the intersection of analytics and real-world business impact.
-      </p>
+      <div class="aboutHero__grid">
+        <!-- Left: photo / profile card -->
+        <aside class="profileCard" aria-label="Profile">
+          <div class="avatarWrap">
+            <img
+              class="avatar"
+              src="https://media.licdn.com/dms/image/v2/D5603AQHY-T2iPBGCYw/profile-displayphoto-crop_800_800/B56Zs4Y7x5KEAI-/0/1766177619566?e=1773273600&v=beta&t=yxrHArLcxiV5zHtS67DPAY9gBLELsgqTXt2e93n-da8"
+              alt="Esref “Esh” Selvi"
+              loading="lazy"
+              decoding="async"
+              width="800"
+              height="800"
+            />
+          </div>
 
-      <p>
-        My journey into data science began during my master’s program, where I built my first machine learning project.
-        At the time, the work was academic. Later, while operating and co-managing businesses,
-        I realized that the same analytical foundations could directly influence operational performance,
-        pricing decisions, and revenue outcomes.
-      </p>
+          <div class="profileMeta">
+            <div class="profileMeta__row">
+              <span class="badge"><span class="dot"></span> Business-first Data Science</span>
+              <span class="badge"><span class="dot"></span> ML • Feature Engineering</span>
+            </div>
 
-      <p>
-        Applying data science in business environments changed my perspective.
-        Unlike academic research, where impact may take time to materialize,
-        operational analytics produces immediate and measurable results.
-        By leveraging machine learning, feature engineering, and optimization techniques,
-        I helped streamline workflows, accelerate decision cycles, and improve strategic inventory selection.
-      </p>
+            <div class="kv">
+              <div class="kv__k">Focus</div>
+              <div class="kv__v">Decision systems, pricing strategy, operational optimization, and stakeholder-ready narratives.</div>
+            </div>
 
-      <p>
-        One of my proudest achievements was designing a system that analyzed weekly incoming truck inventory
-        in minutes — a process that previously required multiple days of executive review.
-        This not only created a competitive advantage in timing and selection,
-        but also freed leadership capacity for higher-level strategic initiatives.
-      </p>
+            <div class="kv">
+              <div class="kv__k">Credibility</div>
+              <div class="kv__v">Research-grade foundation (medical image analysis) + real operational execution.</div>
+            </div>
 
-      <p>
-        My background combines <b>M.S. Biomedical Engineering</b> with graduate studies in
-        <b>Electrical Engineering</b> and <b>Business Management</b>.
-        Today, I focus on building scalable, impact-driven data solutions —
-        turning complex, messy datasets into clear, actionable strategy.
-      </p>
+            <div class="hero__actions" style="margin-top:10px;">
+              <a class="btn btn--primary" href="projects.html">View Selected Work</a>
+              <a class="btn btn--ghost" href="contact.html">Get in Touch</a>
+            </div>
+          </div>
+        </aside>
 
-      <p style="margin-bottom:0;">
-        I am driven, ambitious, and strategic — motivated by solving high-stakes problems
-        where data-informed decisions truly matter.
-      </p>
+        <!-- Right: story -->
+        <section class="hero__left aboutCopy" aria-label="About copy">
+          <div class="eyebrow">
+            <span class="dot"></span>
+            <span>Clarity under uncertainty • Measurable outcomes • Trustworthy systems</span>
+          </div>
 
+          <h1 class="hero__title" style="font-size:44px;">
+            I build decision systems
+            <span class="accent">leadership can act on</span>.
+          </h1>
+
+          <p class="hero__lead" style="max-width:72ch;">
+            I’m <strong>Esref “Esh” Selvi</strong>, a Data Scientist focused on practical machine learning and
+            analytics that improve decision speed, consistency, and outcomes.
+            My work connects <strong>academic rigor</strong> with <strong>operational reality</strong> — turning
+            messy data into structured decisions teams can trust.
+          </p>
+
+          <div class="quoteStrip" aria-label="Philosophy">
+            <div class="quoteStrip__text">
+              Great data science isn’t “more models.” It’s <strong>better tradeoffs</strong> and <strong>clearer decisions</strong> — delivered in a form stakeholders can execute.
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="tags tags--tight" aria-label="Focus tags">
+            <span class="tag">Pricing Strategy & Forecasting</span>
+            <span class="tag">Operational Optimization</span>
+            <span class="tag">Applied ML (NLP • Large-Scale Data)</span>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- STORY BLOCKS -->
+    <section class="section" aria-label="My story">
+      <header class="section__head">
+        <h2 class="section__title">My story</h2>
+        <p class="section__subtitle">
+          I started in research, then learned what “impact” really means in fast-moving operations.
+          Now I build analytics that hold up in the real world — time pressure, messy data, and hard constraints.
+        </p>
+      </header>
+
+      <div class="blocks">
+        <article class="card card--research">
+          <div class="card__cap">Academic Rigor</div>
+          <h3 class="card__title">Research-grade foundation</h3>
+          <p class="card__text">
+            During my master’s research, I worked on medical imaging problems that require careful validation:
+            segmentation accuracy, methodology discipline, and clear experimental conclusions.
+          </p>
+          <div class="card__foot">
+            <span class="chip">Methodology</span>
+            <span class="chip">Validation</span>
+            <span class="chip">Evidence-based</span>
+          </div>
+        </article>
+
+        <article class="card card--prime">
+          <div class="card__cap">Operational Impact</div>
+          <h3 class="card__title">Decisions in minutes, not days</h3>
+          <p class="card__text">
+            In business operations, I built structured workflows that compressed multi-day executive review cycles into minutes —
+            improving decision speed and consistency where timing matters.
+          </p>
+          <div class="card__foot">
+            <span class="chip">Decision systems</span>
+            <span class="chip">Execution</span>
+            <span class="chip">Measurable outcomes</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- WHAT I OPTIMIZE FOR -->
+    <section class="section" aria-label="What I optimize for">
+      <header class="section__head">
+        <h2 class="section__title">What I optimize for</h2>
+        <p class="section__subtitle">
+          Reliable outcomes come from strong framing, careful evaluation, and stakeholder-aligned delivery.
+        </p>
+      </header>
+
+      <div class="cards cards--3">
+        <article class="card card--split">
+          <div class="card__cap">Problem Framing</div>
+          <h3 class="card__title">Correct question, correct metric</h3>
+          <p class="card__text">
+            Align goals, constraints, and success metrics before building. Most failures start with ambiguous objectives.
+          </p>
+          <div class="card__foot">
+            <span class="chip">Tradeoffs</span>
+            <span class="chip">Constraints</span>
+          </div>
+        </article>
+
+        <article class="card card--prime">
+          <div class="card__cap">Modeling</div>
+          <h3 class="card__title">Feature engineering + evaluation rigor</h3>
+          <p class="card__text">
+            Practical ML: leakage control, robust validation, error analysis, and iteration designed for real-world use.
+          </p>
+          <div class="card__foot">
+            <span class="chip">Rigor</span>
+            <span class="chip">Reliability</span>
+          </div>
+        </article>
+
+        <article class="card card--research">
+          <div class="card__cap">Communication</div>
+          <h3 class="card__title">Stakeholder-ready narratives</h3>
+          <p class="card__text">
+            Turning analysis into decisions: crisp recommendations, clear assumptions, and what changes if conditions shift.
+          </p>
+          <div class="card__foot">
+            <span class="chip">Clarity</span>
+            <span class="chip">Decision support</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="section__cta">
+        <a class="btn btn--primary" href="projects.html">Explore projects</a>
+        <a class="btn btn--ghost" href="skills.html">View skills</a>
+        <a class="btn btn--soft" href="contact.html">Contact</a>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="cta" aria-label="CTA">
+      <div class="cta__inner">
+        <div class="cta__copy">
+          <h2 class="cta__title">If you value speed, rigor, and usable ML — let’s connect.</h2>
+          <p class="cta__text">
+            I enjoy high-stakes problems where data turns uncertainty into clear action.
+          </p>
+        </div>
+        <div class="cta__actions">
+          <a class="btn btn--soft" href="contact.html">Contact</a>
+          <a class="btn btn--ghost" href="projects.html">Projects</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>© 2026 Esref “Esh” Selvi</span>
+      <span class="footer__sep">•</span>
+      <span class="footer__hint">Built with HTML + CSS on GitHub Pages</span>
     </div>
-  </div>
-
-  <footer>
-    © 2026 Esref “Esh” Selvi
   </footer>
 
 </body>
