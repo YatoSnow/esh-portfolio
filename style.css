@@ -758,3 +758,150 @@ strong{ color: var(--text); }
     scroll-behavior: auto !important;
   }
 }
+/* =========================================================
+   ABOUT PAGE (Index-quality)
+========================================================= */
+
+.aboutHero{
+  margin-top: 0;
+}
+
+.aboutHero__grid{
+  position: relative;
+  display:grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 18px;
+  padding: 22px;
+}
+
+@media (max-width: 980px){
+  .aboutHero__grid{ grid-template-columns: 1fr; }
+}
+
+/* Photo / profile card */
+.profileCard{
+  border-radius: 22px;
+  border: 1px solid rgba(20,184,166,0.18);
+  background: linear-gradient(180deg, rgba(12,35,41,0.62), rgba(7,20,25,0.52));
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow2);
+  padding: 16px;
+  overflow: hidden;
+}
+
+.avatarWrap{
+  position: relative;
+  border-radius: 18px;
+  overflow:hidden;
+  border: 1px solid rgba(20,184,166,0.20);
+  background: rgba(7,20,25,0.35);
+}
+
+.avatarWrap::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(700px 260px at 20% 0%, rgba(20,184,166,0.18), transparent 60%),
+    linear-gradient(180deg, rgba(0,0,0,0.08), rgba(0,0,0,0.22));
+}
+
+.avatar{
+  width: 100%;
+  height: auto;
+  display:block;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transform: scale(1.02);
+}
+
+/* Small profile meta row */
+.profileMeta{
+  margin-top: 14px;
+  display:grid;
+  gap: 10px;
+}
+
+.profileMeta__row{
+  display:flex;
+  flex-wrap:wrap;
+  gap: 10px;
+  align-items:center;
+}
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(20,184,166,0.18);
+  background: rgba(20,184,166,0.08);
+  color: rgba(231,251,253,0.84);
+  font-weight: 850;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+}
+
+.badge .dot{
+  width: 7px;
+  height: 7px;
+  border-radius: 99px;
+  background: var(--brand);
+  box-shadow: 0 0 0 4px rgba(20,184,166,0.12);
+}
+
+.kv{
+  display:grid;
+  gap: 6px;
+}
+
+.kv__k{
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.34px;
+  color: rgba(231,251,253,0.62);
+  font-weight: 900;
+}
+
+.kv__v{
+  color: rgba(231,251,253,0.80);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.aboutCopy .section__subtitle{
+  max-width: 85ch;
+}
+
+/* Quote strip */
+.quoteStrip{
+  margin-top: 18px;
+  border-radius: 18px;
+  border: 1px solid rgba(20,184,166,0.16);
+  background:
+    radial-gradient(900px 260px at 20% 0%, rgba(20,184,166,0.14), transparent 60%),
+    rgba(12,35,41,0.46);
+  padding: 16px;
+  box-shadow: var(--shadow2);
+}
+
+.quoteStrip__text{
+  color: rgba(231,251,253,0.80);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.quoteStrip__text strong{ color: var(--text); }
+
+/* Two-column story blocks */
+.blocks{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+@media (max-width: 980px){
+  .blocks{ grid-template-columns: 1fr; }
+}
