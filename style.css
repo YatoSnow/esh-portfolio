@@ -759,26 +759,26 @@ strong{ color: var(--text); }
   }
 }
 /* =========================================================
-   ABOUT PAGE (Index-quality)
+   ABOUT PAGE (Index-quality) — FIXED LAYOUT
 ========================================================= */
 
-.aboutHero{
-  margin-top: 0;
-}
+.aboutHero{ margin-top: 0; }
 
+/* Make text dominant, photo supportive */
 .aboutHero__grid{
   position: relative;
   display:grid;
-  grid-template-columns: 0.85fr 1.15fr;
+  grid-template-columns: 1.25fr 0.75fr; /* text > photo */
   gap: 18px;
   padding: 22px;
+  align-items: start;
 }
 
 @media (max-width: 980px){
   .aboutHero__grid{ grid-template-columns: 1fr; }
 }
 
-/* Photo / profile card */
+/* Photo / profile card (smaller, controlled) */
 .profileCard{
   border-radius: 22px;
   border: 1px solid rgba(20,184,166,0.18);
@@ -787,6 +787,21 @@ strong{ color: var(--text); }
   box-shadow: var(--shadow2);
   padding: 16px;
   overflow: hidden;
+
+  /* key: prevent oversized panel */
+  max-width: 420px;
+  justify-self: end;
+  position: sticky;
+  top: 92px; /* below navbar */
+}
+
+@media (max-width: 980px){
+  .profileCard{
+    max-width: 520px;
+    justify-self: start;
+    position: relative;
+    top: auto;
+  }
 }
 
 .avatarWrap{
@@ -804,19 +819,21 @@ strong{ color: var(--text); }
   pointer-events:none;
   background:
     radial-gradient(700px 260px at 20% 0%, rgba(20,184,166,0.18), transparent 60%),
-    linear-gradient(180deg, rgba(0,0,0,0.08), rgba(0,0,0,0.22));
+    linear-gradient(180deg, rgba(0,0,0,0.06), rgba(0,0,0,0.22));
 }
 
+/* key: less "ID photo" feel */
 .avatar{
   width: 100%;
   height: auto;
   display:block;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 5;      /* not square */
   object-fit: cover;
+  object-position: 50% 30%; /* move face a bit up */
   transform: scale(1.02);
+  filter: saturate(1.02) contrast(1.02);
 }
 
-/* Small profile meta row */
 .profileMeta{
   margin-top: 14px;
   display:grid;
@@ -852,10 +869,7 @@ strong{ color: var(--text); }
   box-shadow: 0 0 0 4px rgba(20,184,166,0.12);
 }
 
-.kv{
-  display:grid;
-  gap: 6px;
-}
+.kv{ display:grid; gap: 6px; }
 
 .kv__k{
   font-size: 12px;
@@ -871,9 +885,7 @@ strong{ color: var(--text); }
   line-height: 1.55;
 }
 
-.aboutCopy .section__subtitle{
-  max-width: 85ch;
-}
+.aboutCopy .section__subtitle{ max-width: 85ch; }
 
 /* Quote strip */
 .quoteStrip{
@@ -905,3 +917,4 @@ strong{ color: var(--text); }
 @media (max-width: 980px){
   .blocks{ grid-template-columns: 1fr; }
 }
+
