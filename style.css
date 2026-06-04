@@ -134,7 +134,7 @@ strong { color: var(--text); font-weight: 600; }
   white-space: nowrap;
   flex-shrink: 0;
 }
-.nav__logo span { color: var(--accent); }
+.nav__logo span { color: var(--text-muted); }
 
 /* Page links */
 .nav__links {
@@ -398,10 +398,10 @@ html.light .icon-moon { display: block; }
    HOME — HERO
    ============================================================ */
 .hero {
-  min-height: calc(100vh - var(--nav-h));
+  min-height: auto;
   display: flex;
   align-items: center;
-  padding: 72px 24px 60px;
+  padding: 48px 24px 48px;
   max-width: var(--max-w);
   margin: 0 auto;
 }
