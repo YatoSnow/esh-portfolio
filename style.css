@@ -99,3 +99,27 @@ strong {
   box-shadow:none;
   border-color: rgba(255,255,255,0.08);
 }
+
+/* Nav social icon links */
+.nav__social {
+  display: inline-flex;
+  align-items: center;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+  color: inherit;
+  text-decoration: none;
+  margin-left: 4px;
+}
+.nav__social:hover {
+  opacity: 1;
+}
+
+/* Footer links */
+.footer a {
+  color: rgba(231,251,253,0.65);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.footer a:hover {
+  color: #14b8a6;
+}
