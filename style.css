@@ -603,6 +603,15 @@ html.light .icon-moon { display: block; }
   align-items: start;
 }
 
+/* Profile photo */
+.avatar {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+}
+
 /* Quote strip */
 .quoteStrip {
   margin-top: 22px;
