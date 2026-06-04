@@ -3,34 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Esref “Esh” Selvi | Data Scientist</title>
-  <meta name="description" content="Esref “Esh” Selvi — Data Scientist focused on ML, feature engineering, pricing strategy, and operational optimization. Academic rigor + measurable business impact." />
-  <link rel="stylesheet" href="./style.css" />
+  <title>Esref "Esh" Selvi | Data Scientist</title>
+  <meta name="description" content="Esref &quot;Esh&quot; Selvi — Data Scientist focused on ML, feature engineering, pricing strategy, and operational optimization. Academic rigor + measurable business impact." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/esh-portfolio/style.css" />
 </head>
-
 <body>
 
   <!-- NAV -->
-  <nav class="nav">
-    <div class="nav__brand">
-      <a class="nav__logo" href="index.html" aria-label="Home">
-        Esref <span class="quote">“Esh”</span> Selvi
-      </a>
-      <span class="nav__role">Data Scientist</span>
-    </div>
-
-    <div class="nav__links" aria-label="Primary">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="skills.html">Skills</a>
-      <a href="contact.html">Contact</a>
-      <a href="https://www.linkedin.com/in/esrefselvi/" class="nav__social" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-      </a>
-      <a href="https://github.com/YatoSnow" class="nav__social" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-      </a>
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="/esh-portfolio/index.html">Esref <span>"Esh"</span> Selvi</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav__links" id="navLinks">
+        <a href="/esh-portfolio/index.html" class="active">Home</a>
+        <a href="/esh-portfolio/about.html">About</a>
+        <a href="/esh-portfolio/projects.html">Projects</a>
+        <a href="/esh-portfolio/skills.html">Skills</a>
+        <a href="/esh-portfolio/contact.html">Contact</a>
+        <div class="nav__socials">
+          <a href="https://www.linkedin.com/in/esrefselvi/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://github.com/YatoSnow" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+        </div>
+      </div>
     </div>
   </nav>
 
@@ -38,71 +39,66 @@
 
     <!-- HERO -->
     <section class="hero" aria-label="Hero">
-      <div class="hero__bg" aria-hidden="true"></div>
-
       <div class="hero__grid">
+
         <!-- Left -->
-        <div class="hero__left">
+        <div class="hero__left fade-in">
           <div class="eyebrow">
             <span class="dot"></span>
-            <span>Executive-level analytics • Decision systems • Measurable outcomes</span>
+            <span>Executive-level analytics&nbsp;•&nbsp;Decision systems&nbsp;•&nbsp;Measurable outcomes</span>
           </div>
 
           <h1 class="hero__title">
-            Data science that moves
+            Data science that moves<br>
             <span class="accent">business decisions</span>.
           </h1>
 
-          <!-- UPDATED (Option 1) -->
           <p class="hero__lead">
-            I’m <strong>Esref “Esh” Selvi</strong>, a Data Scientist working across
+            I'm <strong>Esref "Esh" Selvi</strong>, a Data Scientist working across
             <strong>Machine Learning</strong>, <strong>Feature Engineering</strong>,
             and <strong>Pricing Strategy</strong>. I focus on building practical analytics and decision
-            workflows that help teams make clearer tradeoffs—improving speed, consistency, and outcomes.
+            workflows that help teams make clearer tradeoffs — improving speed, consistency, and outcomes.
           </p>
 
           <div class="hero__actions">
-            <a class="btn btn--primary" href="projects.html">View Selected Work</a>
-            <a class="btn btn--ghost" href="about.html">Read My Story</a>
-            <a class="btn btn--ghost" href="contact.html">Get in Touch</a>
+            <a class="btn btn--primary" href="/esh-portfolio/projects.html">View Selected Work</a>
+            <a class="btn btn--ghost" href="/esh-portfolio/about.html">Read My Story</a>
+            <a class="btn btn--ghost" href="/esh-portfolio/contact.html">Get in Touch</a>
           </div>
 
-          <!-- REDUCED + CALMER TAGS -->
-          <div class="tags tags--tight" aria-label="Focus tags">
-            <span class="tag">Pricing Strategy & Forecasting</span>
+          <div class="tags hero__tags">
+            <span class="tag">Pricing Strategy &amp; Forecasting</span>
             <span class="tag">Operational Optimization</span>
-            <span class="tag">Applied ML (NLP • Large-Scale Data)</span>
+            <span class="tag">Applied ML · NLP · Large-Scale Data</span>
           </div>
 
           <div class="divider"></div>
 
-          <!-- Credibility row -->
-          <div class="cred" aria-label="Credibility highlights">
+          <div class="cred">
             <div class="cred__item">
               <div class="cred__kpi">7</div>
-              <div class="cred__label">Peer-reviewed publications (medical image analysis)</div>
+              <div class="cred__label">Peer-reviewed publications</div>
             </div>
             <div class="cred__item">
               <div class="cred__kpi">ML</div>
-              <div class="cred__label">End-to-end modeling, validation & feature engineering</div>
+              <div class="cred__label">End-to-end modeling &amp; feature engineering</div>
             </div>
             <div class="cred__item">
               <div class="cred__kpi">Ops</div>
-              <div class="cred__label">High-stakes, time-sensitive operational optimization</div>
+              <div class="cred__label">High-stakes operational optimization</div>
             </div>
           </div>
         </div>
 
-        <!-- Right -->
-        <aside class="hero__right" aria-label="Impact panel">
-          <div class="panel panel--glass">
+        <!-- Right: Impact panel -->
+        <aside class="hero__right fade-in" aria-label="Impact panel">
+          <div class="panel">
             <div class="panel__top">
               <div class="panel__title">Impact Snapshot</div>
               <div class="panel__badge">Business-first</div>
             </div>
 
             <ul class="impact">
-              <!-- PRIMARY HIGHLIGHT -->
               <li class="impact__item impact__item--primary">
                 <div class="impact__icon" aria-hidden="true">↯</div>
                 <div class="impact__text">
@@ -110,7 +106,6 @@
                   enabling faster executive decisions.
                 </div>
               </li>
-
               <li class="impact__item">
                 <div class="impact__icon" aria-hidden="true">◎</div>
                 <div class="impact__text">
@@ -118,7 +113,6 @@
                   designed for real-world constraints, not just notebooks.
                 </div>
               </li>
-
               <li class="impact__item">
                 <div class="impact__icon" aria-hidden="true">▦</div>
                 <div class="impact__text">
@@ -128,37 +122,36 @@
               </li>
             </ul>
 
-            <div class="panel__sub">
-              <div class="mini">Primary Stack</div>
-              <div class="stack">
-                <span class="stack__pill">Python</span>
-                <span class="stack__pill">SQL</span>
-                <span class="stack__pill">Pandas</span>
-                <span class="stack__pill">NumPy</span>
-                <span class="stack__pill">scikit-learn</span>
-              </div>
+            <div class="mini">Primary Stack</div>
+            <div class="stack">
+              <span class="stack__pill">Python</span>
+              <span class="stack__pill">SQL</span>
+              <span class="stack__pill">Pandas</span>
+              <span class="stack__pill">NumPy</span>
+              <span class="stack__pill">scikit-learn</span>
             </div>
 
             <div class="panel__cta">
-              <a class="btn btn--soft" href="projects.html">See projects & repos →</a>
+              <a class="btn btn--soft" href="/esh-portfolio/projects.html">See projects &amp; repos →</a>
             </div>
           </div>
         </aside>
+
       </div>
     </section>
 
-    <!-- VALUE SECTION -->
+    <!-- WHAT I DELIVER -->
     <section class="section" aria-label="What I deliver">
-      <header class="section__head">
+      <header class="section__head fade-in">
         <h2 class="section__title">What I deliver</h2>
         <p class="section__subtitle">
-          Senior-level work is not “more models” — it’s <strong>structure</strong>, <strong>tradeoffs</strong>,
+          Senior-level work is not "more models" — it's <strong>structure</strong>, <strong>tradeoffs</strong>,
           and <strong>impact</strong>. My focus is building systems people can trust and use.
         </p>
       </header>
 
-      <div class="cards cards--3">
-        <article class="card card--prime">
+      <div class="cards--3">
+        <article class="card fade-in">
           <div class="card__cap">Business Impact</div>
           <h3 class="card__title">Decision systems, not dashboards</h3>
           <p class="card__text">
@@ -171,7 +164,7 @@
           </div>
         </article>
 
-        <article class="card card--split">
+        <article class="card fade-in">
           <div class="card__cap">Technical Depth</div>
           <h3 class="card__title">Robust ML + feature engineering</h3>
           <p class="card__text">
@@ -184,7 +177,7 @@
           </div>
         </article>
 
-        <article class="card card--research">
+        <article class="card fade-in">
           <div class="card__cap">Academic Rigor</div>
           <h3 class="card__title">Research-grade foundation</h3>
           <p class="card__text">
@@ -201,78 +194,101 @@
 
     <!-- SELECTED WORK -->
     <section class="section" aria-label="Selected work">
-      <header class="section__head section__head--tight">
+      <header class="section__head fade-in">
         <h2 class="section__title">Selected work</h2>
         <p class="section__subtitle">
           A few representative projects. Full details and repositories are on the Projects page.
         </p>
       </header>
 
-      <div class="work">
-        <a class="work__item" href="projects.html#airbnb-price" aria-label="Dallas Airbnb — Price Prediction">
+      <div class="work fade-in">
+        <a class="work__item" href="/esh-portfolio/projects.html">
           <div class="work__meta">
-            <div class="work__kicker">Machine Learning</div>
-            <div class="work__title">Dallas Airbnb — Price Prediction</div>
-            <div class="work__desc">Cleaning, EDA, feature engineering, modeling & evaluation for pricing insights.</div>
+            <div class="work__kicker">Operations &amp; Machine Learning</div>
+            <div class="work__title">Inventory Decision System — Toros Deals</div>
+            <div class="work__desc">AdaBoost ranking model scoring 400+ weekly truckloads; automated what required manual review by four partners. 4–5× profitability improvement.</div>
           </div>
           <div class="work__arrow" aria-hidden="true">→</div>
         </a>
 
-        <a class="work__item" href="projects.html#nlp-topics" aria-label="Airbnb Reviews — NLP Topic Modeling">
+        <a class="work__item" href="/esh-portfolio/projects.html">
           <div class="work__meta">
             <div class="work__kicker">NLP</div>
-            <div class="work__title">Airbnb Reviews — Topic Modeling</div>
-            <div class="work__desc">Interpretable themes (cleanliness, location, communication) from large review corpora.</div>
+            <div class="work__title">Airbnb Dallas — Guest Satisfaction NLP</div>
+            <div class="work__desc">Analyzed 219K+ reviews using NMF and LDA to identify key drivers of guest satisfaction.</div>
           </div>
           <div class="work__arrow" aria-hidden="true">→</div>
         </a>
 
-        <a class="work__item" href="projects.html#medical-seg" aria-label="Medical Image Segmentation — CT & MRI">
+        <a class="work__item" href="/esh-portfolio/projects.html">
           <div class="work__meta">
             <div class="work__kicker">Medical Imaging</div>
-            <div class="work__title">CT/MRI Segmentation — Master’s Research</div>
-            <div class="work__desc">Segmentation modeling and validation; research-to-practice rigor.</div>
+            <div class="work__title">CT/MRI Segmentation — Master's Research</div>
+            <div class="work__desc">Segmentation modeling and validation; 7 peer-reviewed publications.</div>
           </div>
           <div class="work__arrow" aria-hidden="true">→</div>
         </a>
       </div>
 
-      <div class="section__cta">
-        <a class="btn btn--primary" href="projects.html">Explore all projects</a>
-        <a class="btn btn--ghost" href="skills.html">View skills</a>
+      <div class="section__cta fade-in">
+        <a class="btn btn--primary" href="/esh-portfolio/projects.html">Explore all projects</a>
+        <a class="btn btn--ghost" href="/esh-portfolio/skills.html">View skills</a>
       </div>
     </section>
 
-    <!-- FINAL CTA -->
+    <!-- CTA BAND -->
     <section class="cta" aria-label="CTA">
       <div class="cta__inner">
-        <div class="cta__copy">
-          <h2 class="cta__title">Let’s build analytics that leadership can act on.</h2>
+        <div class="cta__copy fade-in">
+          <h2 class="cta__title">Let's build analytics that leadership can act on.</h2>
           <p class="cta__text">
-            If you’re looking for a Data Scientist who combines academic rigor with operational reality,
-            I’d love to connect.
+            If you're looking for a Data Scientist who combines academic rigor with operational reality,
+            I'd love to connect.
           </p>
         </div>
-        <div class="cta__actions">
-          <a class="btn btn--soft" href="contact.html">Contact</a>
-          <a class="btn btn--ghost" href="about.html">About</a>
+        <div class="cta__actions fade-in">
+          <a class="btn btn--primary" href="/esh-portfolio/contact.html">Get in Touch</a>
+          <a class="btn btn--ghost" href="/esh-portfolio/about.html">About Me</a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <footer class=”footer”>
-    <div class=”footer__inner”>
-      <span>© 2026 Esref “Esh” Selvi</span>
-      <span class=”footer__sep”>•</span>
-      <a href=”https://www.linkedin.com/in/esrefselvi/” target=”_blank” rel=”noopener noreferrer”>LinkedIn</a>
-      <span class=”footer__sep”>•</span>
-      <a href=”https://github.com/YatoSnow” target=”_blank” rel=”noopener noreferrer”>GitHub</a>
-      <span class=”footer__sep”>•</span>
-      <a href=”mailto:esref.selvi@gmail.com”>esref.selvi@gmail.com</a>
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>© 2026 Esref "Esh" Selvi</span>
+      <span class="footer__sep">•</span>
+      <a href="https://www.linkedin.com/in/esrefselvi/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <span class="footer__sep">•</span>
+      <a href="https://github.com/YatoSnow" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <span class="footer__sep">•</span>
+      <a href="mailto:esref.selvi@gmail.com">esref.selvi@gmail.com</a>
     </div>
   </footer>
+
+  <script>
+    // Nav scroll effect
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+
+    // Mobile hamburger
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+
+    // Fade-in on scroll (Intersection Observer)
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => io.observe(el));
+  </script>
 
 </body>
 </html>
